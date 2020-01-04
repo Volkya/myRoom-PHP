@@ -11,19 +11,19 @@
 <body>
 
 
-<!--Navbar-->
+<!--NAVBAR-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="/">Rooms</a>
+  <a class="navbar-brand" href="/index.php">Rooms</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarColor01">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">My room <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/view/my-room.php">My room <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/users.php">Users</a>
+        <a class="nav-link" href="/view/users.php">Users</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -32,17 +32,12 @@
     </form>
       <ul class="navbar-nav my-lg-0">
           <li class="nav-item">
-              <a class="nav-link" href="/login.php">Signin</a>
+              <a class="nav-link" href="/view/login.php">Signin</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="/signup.php">Signup</a>
+              <a class="nav-link" href="/view/signup.php">Signup</a>
           </li>
       </ul>
   </div>
 </nav>
-
-<!--SCRIPTS-->
-
-</body>
-</html>
 

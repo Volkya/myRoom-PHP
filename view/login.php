@@ -1,8 +1,9 @@
-<?php include('partials/header.php');?>
+<!--VISTA-->
 
+<?php include('../partials/header.php');?>
 
 <div class="container mt-4 col-6">
-    <form action="login.php" method="post">
+    <form action="/controller/login.php" method="post">
 
         <h1 class="text-center">Conectate!</h1>
 
@@ -21,3 +22,5 @@
         </div>
     </form>
 </div>
+
+<?php require 'partials/footer.php' ?>

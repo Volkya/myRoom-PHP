@@ -1,41 +1,22 @@
-<?php
-// verificacion de sesion
-//session_start();
-//
-//    require 'database.php';
-//
-//    if(isset){
-//        if(count($results) > 0){
-//            $user = $results;
-//        }
-//    }
+<!--VISTA-->
 
-?>
+<?php require 'partials/header.php' ?>
 
 
-
-<!--<!DOCTYPE html>-->
-<!--<html>-->
-<!--  <head>-->
-<!--    <meta charset="utf-8">-->
-<!--    <title>Welcome to you WebApp</title>-->
-<!--    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
-<!--    <link rel="stylesheet" href="assets/css/style.css">-->
-<!--  </head>-->
-<!--  <body>-->
-    <?php require 'partials/header.php' ?>
-
+<!--    si estas conectado mostra esto -->
     <?php if(!empty($user)): ?>
       <br> Welcome. <?= $user['email']; ?>
       <br>You are Successfully Logged In
-      <a href="logout.php">
+      <a href="controller/logout.php">
         Logout
       </a>
+<!--    si no estas conectado mostra esto-->
     <?php else: ?>
       <h1>Please Login or SignUp</h1>
 
-      <a href="login.php">Login</a> or
-      <a href="signup.php">SignUp</a>
+      <a href="controller/login.php">Login</a> or
+      <a href="view/signup.php">SignUp</a>
     <?php endif; ?>
-<!--  </body>-->
-<!--</html>-->
+
+
+<?php require 'partials/footer.php' ?>
